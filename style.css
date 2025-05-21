@@ -84,7 +84,8 @@ section img {
 }
 
 section h2, section p, section ul {
-    overflow: hidden;
+    display: block;
+    margin-left: 42%;
 }
 
 /* Clear floats for sections */
@@ -97,4 +98,16 @@ section::after {
 /* Slightly smaller image for better balance */
 section img {
     width: 35%;
+}
+
+/* Layout fix: make text align next to image instead of overlapping */
+section h2, section p, section ul {
+    display: block;
+    margin-left: 42%;
+}
+
+/* Optional: give extra breathing room below sections */
+section {
+    overflow: hidden;
+    clear: both;
 }
