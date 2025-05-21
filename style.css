@@ -86,3 +86,15 @@ section img {
 section h2, section p, section ul {
     overflow: hidden;
 }
+
+/* Clear floats for sections */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Slightly smaller image for better balance */
+section img {
+    width: 35%;
+}
