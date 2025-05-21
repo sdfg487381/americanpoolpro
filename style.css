@@ -137,3 +137,28 @@ section {
     margin-top: 0.5em;
     font-size: 1.1em;
 }
+
+/* Responsive tweaks */
+@media screen and (max-width: 768px) {
+    /* Stack service cards vertically */
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Make form fill more of the screen on mobile */
+    .quote-form {
+        max-width: 90%;
+        padding: 1em;
+    }
+
+    /* Stack image and text in sections */
+    section img {
+        float: none;
+        width: 100%;
+        margin: 0 0 1em 0;
+    }
+
+    section h2, section p, section ul {
+        margin-left: 0;
+    }
+}
