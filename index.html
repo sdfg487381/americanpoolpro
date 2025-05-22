@@ -17,24 +17,8 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
-       <h3>Request a Quote</h3>
-        <form action="https://formsubmit.co/americanpoolpromain@gmail.com" method="POST" class="quote-form">
-          <input type="hidden" name="_captcha" value="false">
-          
-          <label for="name">Name:</label><br>
-          <input type="text" id="name" name="name" required><br><br>
-        
-          <label for="email">Email:</label><br>
-          <input type="email" id="email" name="email" required><br><br>
-        
-          <label for="phone">Phone:</label><br>
-          <input type="tel" id="phone" name="phone" required><br><br>
-        
-          <label for="message">Pool Info or Concern:</label><br>
-          <textarea id="message" name="message" rows="4" required></textarea><br><br>
-        
-          <button type="submit">Send Request</button>
-        </form>
+
+    <a href="#" class="quote-button" onclick="toggleForm(event)">Request a Quote</a>
 
     <section id="hero">
         <img src="hero.jpg" alt="Pool Hero" style="width:100%; border-radius:8px;">
@@ -69,6 +53,40 @@
         <h2>About Us</h2>
         <p>Founded by a Certified Pool Operator and Florida-based entrepreneur, American Pool Pro is committed to customer-first service. We offer maintenance solutions designed for homeowners who want their pool perfect year-round.</p>
     </section>
+
+    <section id="quote-form" style="display: none;">
+          <h3>How should we reach you?</h3>
+          <form action="https://formsubmit.co/youremail@example.com" method="POST" class="quote-form">
+            <input type="hidden" name="_captcha" value="false">
+        
+            <label for="first-name">First Name *</label>
+            <input type="text" id="first-name" name="first-name" required>
+        
+            <label for="last-name">Last Name *</label>
+            <input type="text" id="last-name" name="last-name" required>
+        
+            <label for="phone">Phone *</label>
+            <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
+        
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        
+            <label>
+              <input type="checkbox" name="sms-optin" required>
+              By checking this box, you agree to receive text messages at the number provided related to your request and updates.
+            </label>
+        
+            <button type="submit">Continue</button>
+          </form>
+        </section>
+
+            <script>
+          function toggleForm(event) {
+            event.preventDefault(); // prevent jump
+            const form = document.getElementById('quote-form');
+            form.style.display = (form.style.display === 'none') ? 'block' : 'none';
+          }
+        </script>
 
     <section id="contact">
         <h2>Contact</h2>
