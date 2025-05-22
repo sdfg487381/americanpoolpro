@@ -84,18 +84,16 @@
       </div>
     </section>
 
-           <script>
-              function toggleForm(event) {
-                event.preventDefault(); // Stop the link from jumping
-                const form = document.getElementById('quote-form');
-                if (form.style.display === 'none' || form.style.display === '') {
-                  form.style.display = 'block';
-                  form.scrollIntoView({ behavior: 'smooth' });
-                } else {
-                  form.style.display = 'none';
-                }
-              }
-            </script>
+          <script>
+          function toggleForm(event) {
+            event.preventDefault();
+            document.getElementById('quote-form').style.display = 'flex';
+          }
+        
+          function closeForm() {
+            document.getElementById('quote-form').style.display = 'none';
+          }
+        </script>
 
     <section id="contact">
         <h2>Contact</h2>
