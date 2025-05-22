@@ -55,30 +55,33 @@
     </section>
 
 
-    <section id="quote-form" style="display: none;">
-      <h3>How should we reach you?</h3>
-          <form action="https://formsubmit.co/youremail@example.com" method="POST" class="quote-form">
-            <input type="hidden" name="_captcha" value="false">
-        
-            <label for="first-name">First Name *</label>
-            <input type="text" id="first-name" name="first-name" required>
-        
-            <label for="last-name">Last Name *</label>
-            <input type="text" id="last-name" name="last-name" required>
-        
-            <label for="phone">Phone *</label>
-            <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
-        
-            <label for="email">Email *</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com" required>
-        
-            <label>
-              <input type="checkbox" name="sms-optin" required>
-              By checking this box, you agree to receive text messages at the number provided related to your request and updates.
-            </label>
-        
-            <button type="submit">Continue</button>
-          </form>
+    <section id="quote-form" class="quote-popup" style="display: none;">
+      <div class="quote-box">
+        <button class="close-btn" onclick="closeForm()">✖️</button>
+        <h3>How should we reach you?</h3>
+        <form action="https://formsubmit.co/youremail@example.com" method="POST" class="quote-form">
+          <input type="hidden" name="_captcha" value="false">
+    
+          <label for="first-name">First Name *</label>
+          <input type="text" id="first-name" name="first-name" required>
+    
+          <label for="last-name">Last Name *</label>
+          <input type="text" id="last-name" name="last-name" required>
+    
+          <label for="phone">Phone *</label>
+          <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
+    
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+    
+          <label>
+            <input type="checkbox" name="sms-optin" required>
+            By checking this box, you agree to receive text messages related to your request and updates.
+          </label>
+    
+          <button type="submit">Continue</button>
+        </form>
+      </div>
     </section>
 
            <script>
