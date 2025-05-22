@@ -265,3 +265,10 @@ a.quote-button:hover {
     background-color: #005f73;
     transform: translateY(-2px);
 }
+
+.site-logo {
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
