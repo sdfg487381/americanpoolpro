@@ -195,3 +195,35 @@ section {
     font-size: 1.2em;
     cursor: pointer;
 }
+/* Make the popup scrollable and mobile-friendly */
+@media screen and (max-width: 768px) {
+  .quote-popup {
+    align-items: flex-start;
+    padding: 1em;
+    overflow-y: auto;
+  }
+
+  .quote-box {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 2em;
+    border-radius: 12px;
+  }
+
+  .close-btn {
+    top: 15px;
+    right: 15px;
+    font-size: 1.5em;
+  }
+
+  .quote-form button {
+    width: 100%;
+    font-size: 1.1em;
+    padding: 12px;
+  }
+
+  .quote-form input,
+  .quote-form textarea {
+    font-size: 1em;
+  }
+}
