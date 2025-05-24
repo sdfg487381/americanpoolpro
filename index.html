@@ -105,31 +105,34 @@
           <h2>Become a Franchisee</h2>
           <p>American Pool Pro is growing across the U.S., and we’re looking for driven owner-operators who want to build a business backed by proven systems, strong support, and a trustworthy brand.</p>
           <p>Our low-overhead model is designed for independence and profitability — perfect for those ready to make pool care a full-time opportunity.</p>
-          <form class="franchise-form" name="franchise-request" method="POST" netlify>
-              <label for="name">Full Name *</label>
-              <input type="text" id="name" name="name" required>
-            
-              <label for="phone">Phone Number *</label>
-              <input type="tel" id="phone" name="phone" required>
-            
-              <label for="email">Email Address *</label>
-              <input type="email" id="email" name="email" required>
-            
-              <label for="location">Location *</label>
-              <select id="location" name="location" required>
-                <option value="">Select your state</option>
-                <option>Alabama</option><option>Arizona</option><option>Arkansas</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>Florida</option><option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Mississippi</option><option>Missouri</option><option>Nevada</option><option>New Mexico</option><option>North Carolina</option><option>Oklahoma</option><option>South Carolina</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>West Virginia</option>
-              </select>
-            
-              <label for="experience">Tell us about your background or why you’re interested *</label>
-              <textarea id="experience" name="experience" rows="4" required></textarea>
-            
-              <button type="submit">Submit Request</button>
-            </form>
-
+          <a href="#" class="btn-primary" onclick="openFranchisePopup()">Request Franchise Info</a>
         </div>
       </div>
     </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>📍 Based in Central Florida</p>
+        <p>📞 Call or Text: <strong>904-648-9435</strong></p>
+        <p>📧 Email: <strong>americanpoolpromain@gmail.com</strong></p>
+    </section>
+
+    <section class="bottom-links">
+      <h3>Explore More</h3>
+      <div class="link-grid">
+        <a href="#quote-form">Schedule Service</a>
+        <a href="#about">Our Story</a>
+        <a href="#services">What We Do</a>
+        <a href="#franchise">Become a Franchisee</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 American Pool Pro. All rights reserved.</p>
+    </footer>
+    
+    <script src="js/scripts.js"></script>
 
     <section id="quote-form" class="quote-popup" style="display: none;">
       <div class="quote-box">
@@ -160,27 +163,33 @@
       </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>📍 Based in Central Florida</p>
-        <p>📞 Call or Text: <strong>904-648-9435</strong></p>
-        <p>📧 Email: <strong>americanpoolpromain@gmail.com</strong></p>
-    </section>
-
-    <section class="bottom-links">
-      <h3>Explore More</h3>
-      <div class="link-grid">
-        <a href="#quote-form">Schedule Service</a>
-        <a href="#about">Our Story</a>
-        <a href="#services">What We Do</a>
-        <a href="#franchise">Become a Franchisee</a>
-        <a href="#contact">Contact Us</a>
+    <div class="franchise-popup" id="franchise-popup">
+      <div class="franchise-box">
+        <button class="close-btn" onclick="closeFranchisePopup()">×</button>
+        <h2>Franchise Inquiry</h2>
+        <form class="franchise-form" name="franchise-request" method="POST" netlify>
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" required>
+    
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" name="phone" required>
+    
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="location">Location *</label>
+          <select id="location" name="location" required>
+            <option value="">Select your state</option>
+            <option>Alabama</option><option>Arizona</option><option>Arkansas</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>Florida</option><option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Mississippi</option><option>Missouri</option><option>Nevada</option><option>New Mexico</option><option>North Carolina</option><option>Oklahoma</option>><option>Tennessee</option><option>Texas</option><option>Utah</option><option>West Virginia</option>
+          </select>
+    
+          <label for="experience">Tell us about your background or why you're interested *</label>
+          <textarea id="experience" name="experience" rows="4" required></textarea>
+    
+          <button type="submit">Submit Request</button>
+        </form>
       </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 American Pool Pro. All rights reserved.</p>
-    </footer>
-    <script src="js/scripts.js"></script>
+    </div>
+    
 </body>
 </html>
