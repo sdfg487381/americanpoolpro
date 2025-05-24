@@ -10,7 +10,7 @@ body {
 /* === Header === */
 .site-header {
     background-color: #113765;
-    padding: 1em 0;
+    padding: 1.5em 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -27,11 +27,15 @@ body {
     flex-wrap: wrap;
 }
 
+.logo-wrap {
+    flex-shrink: 0;
+    padding-right: 20px;
+}
+
 .site-logo {
-    height: 100px; /* was 60px */
-    max-width: 100%;
-    display: block;
-    margin: 0 auto 10px;
+    height: 80px;
+    max-width: 300px;
+    width: auto;
 }
 
 .site-nav {
