@@ -384,3 +384,37 @@ a.quote-button:hover {
       background-color: #8e122f;
       transform: translateY(-2px);
     }
+
+.bottom-links {
+  background-color: #113765;
+  color: white;
+  text-align: center;
+  padding: 2em 1em;
+}
+
+.bottom-links h3 {
+  margin-bottom: 1em;
+  font-size: 1.4em;
+}
+
+.link-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+.link-grid a {
+  background-color: #b31942;
+  color: white;
+  padding: 0.75em 1.25em;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.link-grid a:hover {
+  background-color: #8e122f;
+}
+
