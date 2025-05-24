@@ -1,61 +1,136 @@
+
 /* === Base === */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f9f9f9;
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
 }
 
 /* === Header === */
 .site-header {
-    background-color: #113765;
-    padding: 1.5em 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: #113765;
+  padding: 1.5em 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .header-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo-wrap {
-    flex-shrink: 0;
-    padding-right: 20px;
+  flex-shrink: 0;
+  padding-right: 20px;
 }
 
 .site-logo {
-    height: 80px;
-    max-width: 300px;
-    width: auto;
+  height: 80px;
+  max-width: 300px;
+  width: auto;
 }
 
 .site-nav {
-    display: flex;
-    gap: 1.5em;
-    font-size: 1.1em;
+  display: flex;
+  gap: 1.5em;
+  font-size: 1.1em;
 }
 
 .site-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
 }
 
 .site-nav a:hover {
-    color: #ffc107;
+  color: #ffc107;
 }
 
-/* === Sections === */
+/* === Top Bar === */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 0.75em 1em;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1001;
+}
+
+.bar-logo {
+  height: 40px;
+}
+
+.bar-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-bar {
+  background-color: #b31942;
+  color: white;
+  font-weight: bold;
+  padding: 14px 28px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+}
+
+.btn-bar:hover {
+  background-color: #8e122f;
+}
+
+/* === Hero Section === */
+.hero {
+  background: #f9f9f9;
+  text-align: center;
+  padding: 2em 1em;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 1.5em;
+  display: block;
+}
+
+.hero h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  color: #113765;
+}
+
+.btn-primary {
+  background-color: #b31942;
+  color: white;
+  font-weight: bold;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #8e122f;
+  transform: translateY(-2px);
+}
+
+/* === Services Section === */
 .services-section {
   padding: 3em 1em;
   background-color: #ffffff;
@@ -75,316 +150,100 @@ body {
   font-size: 1em;
 }
 
-.service-card img {
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
-  margin: 0 auto 1em;
-  display: block;
-}
-
-
-/* === Footer === */
-footer {
-    background: #113765;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    margin-top: 2em;
-}
-
-/* === Buttons === */
-.quote-button,
-a.quote-button {
-    display: inline-block;
-    background-color: #b31942;
-    color: white !important;
-    padding: 14px 28px;
-    text-decoration: none !important;
-    font-size: 1.1em;
-    font-weight: bold;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, transform 0.2s;
-    margin-top: 1em;
-}
-
-.quote-button:hover,
-a.quote-button:hover {
-    background-color: #8e122f;
-    transform: translateY(-2px);
-}
-
-/* === Quote Form === */
-.quote-form {
-    background-color: #eaf2f8;
-    padding: 1em;
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    margin-top: 1em;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.quote-form input,
-.quote-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1em;
-}
-
-.quote-form button {
-    background-color: #b31942;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.quote-form button:hover {
-    background-color: #8e122f;
-}
-
-/* === Service Grid === */
 .service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 1em;
 }
 
 .service-card {
-    background: #ffffff;
-    border-radius: 8px;
-    padding: 1em;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 1em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .service-card img {
-    width: 100%;
-    border-radius: 6px;
-    margin-bottom: 10px;
+  max-width: 64px;
+  height: auto;
+  margin-bottom: 1em;
 }
 
-.service-card h3 {
-    margin-top: 0.5em;
-    font-size: 1.1em;
+/* === Quote Form === */
+.quote-popup, .franchise-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow-y: auto;
+  padding: 2em 1em;
 }
 
-/* === Popup Form === */
-.quote-popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-.quote-box {
-    background: white;
-    padding: 2em;
-    border-radius: 8px;
-    max-width: 500px;
-    width: 90%;
-    position: relative;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+.quote-box, .franchise-box {
+  background: white;
+  padding: 2em;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: transparent;
-    border: none;
-    font-size: 1.2em;
-    cursor: pointer;
-}
-
-/* === Responsive === */
-
-.menu-toggle {
-  display: none;
-  background: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
   border: none;
-  font-size: 2em;
-  color: white;
+  font-size: 1.5em;
   cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-    position: absolute;
-    top: 1.2em;
-    right: 1em;
-  }
-
-  .site-nav {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #113765;
-    text-align: center;
-    padding-bottom: 1em;
-  }
-
-  .site-nav.show {
-    display: flex;
-  }
+.quote-form, .franchise-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
-@media screen and (max-width: 768px) {
-    .header-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-    .site-logo {
-    margin-bottom: 10px;
-    height: 70px;
-  }
-
-    .site-nav {
-    flex-direction: column;
-    gap: 0.5em;
-  }
-
-    .service-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .quote-form {
-        max-width: 90%;
-    }
-
-    section img {
-        float: none;
-        width: 100%;
-        margin: 0 0 1em 0;
-    }
-
-    section h2, section p, section ul {
-        margin-left: 0;
-    }
-
-    .quote-popup {
-        align-items: flex-start;
-        padding: 1em;
-        overflow-y: auto;
-    }
-
-    .quote-box {
-        width: 100%;
-        max-width: 100%;
-        margin-top: 2em;
-        border-radius: 12px;
-    }
-
-    .close-btn {
-        top: 15px;
-        right: 15px;
-        font-size: 1.5em;
-    }
-
-    .quote-form button {
-        width: 100%;
-        font-size: 1.1em;
-        padding: 12px;
-    }
-
-    .quote-form input,
-    .quote-form textarea {
-        font-size: 1em;
-    }
+.quote-form label, .franchise-form label {
+  font-weight: bold;
+  color: #113765;
 }
-    /* === Sticky Top Bar === */
-    .top-bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: #ffffff;
-      padding: 0.75em 1em;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 1001;
-    }
-    
-    .bar-logo {
-      height: 40px;
-    }
-    
-    .bar-actions {
-      display: flex;
-      gap: 10px;
-    }
-    
-    .btn-bar {
-      background-color: #b31942;
-      color: white;
-      font-weight: bold;
-      padding: 14px 28px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-size: 0.9em;
-      transition: background-color 0.3s ease;
-    }
-    
-    .btn-bar:hover {
-      background-color: #8e122f;
-    }
-    
-    /* === Hero Section === */
-    .hero {
-      background: #f9f9f9;
-      text-align: center;
-      padding: 2em 1em;
-    }
-    
-    .hero-image {
-      width: 100%;
-      max-width: 400px;
-      margin: 0 auto 1.5em;
-      display: block;
-    }
-    
-    .hero h1 {
-      font-size: 1.5em;
-      font-weight: bold;
-      margin-bottom: 1em;
-      color: #113765;
-    }
-    
-    .btn-primary {
-      background-color: #b31942;
-      color: white;
-      font-weight: bold;
-      padding: 14px 28px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 1em;
-      transition: background-color 0.3s ease, transform 0.2s;
-    }
-    
-    .btn-primary:hover {
-      background-color: #8e122f;
-      transform: translateY(-2px);
-    }
 
+.quote-form input, .quote-form textarea,
+.franchise-form input, .franchise-form textarea,
+.franchise-form select {
+  width: 100%;
+  padding: 0.75em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+.quote-form button, .franchise-form button {
+  background-color: #b31942;
+  color: white;
+  padding: 0.75em;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quote-form button:hover, .franchise-form button:hover {
+  background-color: #8e122f;
+}
+
+/* === Bottom Links === */
 .bottom-links {
   background-color: #113765;
   color: white;
@@ -418,136 +277,49 @@ a.quote-button:hover {
   background-color: #8e122f;
 }
 
-.franchise-section {
-  padding: 3em 1em;
-  background-color: #ffffff;
-  text-align: center;
-}
-
-.franchise-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2em;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.franchise-image img {
-  max-width: 400px;
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.franchise-text {
-  max-width: 500px;
-  text-align: left;
-}
-
-.franchise-text h2 {
-  font-size: 1.6em;
-  color: #113765;
-  margin-bottom: 0.5em;
-}
-
-.franchise-text p {
-  color: #444;
-  margin-bottom: 1em;
-  line-height: 1.6;
-}
-
-/* Mobile Responsive */
-@media screen and (max-width: 768px) {
-  .franchise-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .franchise-text {
-    text-align: center;
-  }
-}
-
-.franchise-form {
-  margin-top: 2em;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
-.franchise-form label {
-  font-weight: bold;
-  color: #113765;
-}
-
-.franchise-form input,
-.franchise-form select,
-.franchise-form textarea {
-  padding: 0.75em;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1em;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.franchise-form button {
-  background-color: #b31942;
-  color: white;
-  padding: 0.75em;
-  border: none;
-  border-radius: 6px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.franchise-form button:hover {
-  background-color: #8e122f;
-}
-
-@media screen and (max-width: 768px) {
-  .franchise-form {
-    width: 100%;
-  }
-}
-
-.franchise-popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+/* === Responsive === */
+.menu-toggle {
   display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  overflow-y: auto;
-  padding: 2em 1em;
-}
-
-.franchise-box {
-  background: white;
-  padding: 2em;
-  border-radius: 8px;
-  max-width: 500px;
-  width: 100%;
-  position: relative;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.franchise-popup .close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: transparent;
+  background: none;
   border: none;
-  font-size: 1.5em;
+  font-size: 2em;
+  color: white;
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 1.2em;
+    right: 1em;
+  }
+
+  .site-nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #113765;
+    text-align: center;
+    padding-bottom: 1em;
+  }
+
+  .site-nav.show {
+    display: flex;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .site-logo {
+    margin-bottom: 10px;
+    height: 70px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
