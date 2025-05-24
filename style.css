@@ -418,3 +418,57 @@ a.quote-button:hover {
   background-color: #8e122f;
 }
 
+.franchise-section {
+  padding: 3em 1em;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.franchise-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.franchise-image img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.franchise-text {
+  max-width: 500px;
+  text-align: left;
+}
+
+.franchise-text h2 {
+  font-size: 1.6em;
+  color: #113765;
+  margin-bottom: 0.5em;
+}
+
+.franchise-text p {
+  color: #444;
+  margin-bottom: 1em;
+  line-height: 1.6;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .franchise-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .franchise-text {
+    text-align: center;
+  }
+}
+
+
