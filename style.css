@@ -318,11 +318,18 @@ a.quote-button:hover {
       justify-content: space-between;
       align-items: center;
       background-color: #ffffff;
-      padding: 0.75em 1em;
+      padding: 0.5em 1em;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       position: sticky;
       top: 0;
       z-index: 1001;
+    }
+
+    .site-logo {
+      height: 60px;
+      max-width: 220px;
+      object-fit: contain;
+      display: block;
     }
     
     .bar-logo {
@@ -386,168 +393,168 @@ a.quote-button:hover {
       transform: translateY(-2px);
     }
 
-.bottom-links {
-  background-color: #113765;
-  color: white;
-  text-align: center;
-  padding: 2em 1em;
-}
-
-.bottom-links h3 {
-  margin-bottom: 1em;
-  font-size: 1.4em;
-}
-
-.link-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1em;
-}
-
-.link-grid a {
-  background-color: #b31942;
-  color: white;
-  padding: 0.75em 1.25em;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.link-grid a:hover {
-  background-color: #8e122f;
-}
-
-.franchise-section {
-  padding: 3em 1em;
-  background-color: #ffffff;
-  text-align: center;
-}
-
-.franchise-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2em;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.franchise-image img {
-  max-width: 400px;
-  width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.franchise-text {
-  max-width: 500px;
-  text-align: left;
-}
-
-.franchise-text h2 {
-  font-size: 1.6em;
-  color: #113765;
-  margin-bottom: 0.5em;
-}
-
-.franchise-text p {
-  color: #444;
-  margin-bottom: 1em;
-  line-height: 1.6;
-}
-
-/* Mobile Responsive */
-@media screen and (max-width: 768px) {
-  .franchise-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .franchise-text {
-    text-align: center;
-  }
-}
-
-.franchise-form {
-  margin-top: 2em;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
-.franchise-form label {
-  font-weight: bold;
-  color: #113765;
-}
-
-.franchise-form input,
-.franchise-form select,
-.franchise-form textarea {
-  padding: 0.75em;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1em;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.franchise-form button {
-  background-color: #b31942;
-  color: white;
-  padding: 0.75em;
-  border: none;
-  border-radius: 6px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.franchise-form button:hover {
-  background-color: #8e122f;
-}
-
-@media screen and (max-width: 768px) {
-  .franchise-form {
-    width: 100%;
-  }
-}
-
-.franchise-popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  overflow-y: auto;
-  padding: 2em 1em;
-}
-
-.franchise-box {
-  background: white;
-  padding: 2em;
-  border-radius: 8px;
-  max-width: 500px;
-  width: 100%;
-  position: relative;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.franchise-popup .close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: transparent;
-  border: none;
-  font-size: 1.5em;
-  cursor: pointer;
-}
+    .bottom-links {
+      background-color: #113765;
+      color: white;
+      text-align: center;
+      padding: 2em 1em;
+    }
+    
+    .bottom-links h3 {
+      margin-bottom: 1em;
+      font-size: 1.4em;
+    }
+    
+    .link-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+    }
+    
+    .link-grid a {
+      background-color: #b31942;
+      color: white;
+      padding: 0.75em 1.25em;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    
+    .link-grid a:hover {
+      background-color: #8e122f;
+    }
+    
+    .franchise-section {
+      padding: 3em 1em;
+      background-color: #ffffff;
+      text-align: center;
+    }
+    
+    .franchise-content {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2em;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    .franchise-image img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    .franchise-text {
+      max-width: 500px;
+      text-align: left;
+    }
+    
+    .franchise-text h2 {
+      font-size: 1.6em;
+      color: #113765;
+      margin-bottom: 0.5em;
+    }
+    
+    .franchise-text p {
+      color: #444;
+      margin-bottom: 1em;
+      line-height: 1.6;
+    }
+    
+    /* Mobile Responsive */
+    @media screen and (max-width: 768px) {
+      .franchise-content {
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .franchise-text {
+        text-align: center;
+      }
+    }
+    
+    .franchise-form {
+      margin-top: 2em;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+    
+    .franchise-form label {
+      font-weight: bold;
+      color: #113765;
+    }
+    
+    .franchise-form input,
+    .franchise-form select,
+    .franchise-form textarea {
+      padding: 0.75em;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    
+    .franchise-form button {
+      background-color: #b31942;
+      color: white;
+      padding: 0.75em;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .franchise-form button:hover {
+      background-color: #8e122f;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .franchise-form {
+        width: 100%;
+      }
+    }
+    
+    .franchise-popup {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      overflow-y: auto;
+      padding: 2em 1em;
+    }
+    
+    .franchise-box {
+      background: white;
+      padding: 2em;
+      border-radius: 8px;
+      max-width: 500px;
+      width: 100%;
+      position: relative;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    .franchise-popup .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: transparent;
+      border: none;
+      font-size: 1.5em;
+      cursor: pointer;
+    }
