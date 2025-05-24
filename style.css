@@ -13,6 +13,26 @@ body {
   overflow-x: hidden;
 }
 
+body,
+section {
+  padding-left: 1em;
+  padding-right: 1em;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  body,
+  section {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+body, h1, h2, h3, h4, h5, h6, p, a {
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+
 .container,
 section,
 .hero,
@@ -280,8 +300,9 @@ a.quote-button:hover {
   background: none;
   border: none;
   font-size: 2em;
-  color: white;
+  color: #113765;
   cursor: pointer;
+  z-index: 1100;
 }
 
 @media screen and (max-width: 768px) {
@@ -292,7 +313,7 @@ a.quote-button:hover {
     right: 1em;
   }
 
-  .site-nav {
+   .site-nav {
     display: none;
     flex-direction: column;
     width: 100%;
@@ -301,7 +322,7 @@ a.quote-button:hover {
     padding-bottom: 1em;
   }
 
-  .site-nav.show {
+ .site-nav.show {
     display: flex;
   }
 }
