@@ -1,195 +1,108 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>American Pool Pro</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="favicon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>American Pool Pro</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
 </head>
 <body>
-    <div class="top-bar">
-      <img src="images/logo-small.png" alt="APP Logo" class="bar-logo">
-      <div class="bar-actions">
-        <a href="tel:12407665365" class="btn-bar">Call Now</a>
-        <a href="sms:12407665365?&body=Hi%20American%20Pool%20Pro!%20I%27d%20like%20to%20schedule%20pool%20service." class="btn-primary">Schedule Now</a>
-      </div>
+
+<!-- Top Contact Bar -->
+<div class="top-bar">
+  <img src="images/logo-small.png" alt="APP Logo" class="bar-logo" />
+  <div class="bar-actions">
+    <a href="tel:12407665365" class="btn-bar">Call Now</a>
+    <a href="sms:12407665365?&body=Hi%20American%20Pool%20Pro!%20I%27d%20like%20to%20schedule%20pool%20service." class="btn-primary">Schedule Now</a>
+  </div>
+</div>
+
+<!-- Header with Logo and Navigation -->
+<header class="site-header">
+  <div class="header-container">
+    <div class="logo-wrap">
+      <img src="images/APP-Transparent.png" alt="American Pool Pro Logo" class="site-logo" />
     </div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav class="site-nav" id="site-nav">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <header class="site-header">
-      <div class="header-container">
-        <div class="logo-wrap">
-          <img src="images/APP-Transparent.png" alt="American Pool Pro Logo" class="site-logo">
-        </div>
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-        <nav class="site-nav" id="site-nav">
-          <a href="#services">Services</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
+<!-- Hero Section -->
+<section class="hero">
+  <img src="images/van.png" alt="American Pool Pro Van" class="hero-image" />
+  <h1>Your Local Pool Care Experts – "Your Pool Deserves a Pro"</h1>
+  <a href="sms:12407665365?&body=Hi%20American%20Pool%20Pro!%20I%27d%20like%20to%20schedule%20pool%20service." class="btn-primary">Schedule Now</a>
+</section>
 
-    <div style="text-align: center;">
-      <a href="#" class="quote-button" onclick="toggleForm(event)">Request a Quote</a>
-    </div>
+<!-- Quote Button -->
+<div style="text-align: center;">
+  <a href="#" class="quote-button" onclick="toggleForm(event)">Request a Quote</a>
+</div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <img src="images/van.png" alt="American Pool Pro Van" class="hero-image">
-      <h1>Your Local Pool Care Experts – "Your Pool Deserves a Pro"</h1>
-      <a href="sms:12407665365?&body=Hi%20American%20Pool%20Pro!%20I%27d%20like%20to%20schedule%20pool%20service." class="btn-primary">Schedule Now</a>
-    </section>
+<!-- Quote Form Popup -->
+<section id="quote-form" class="quote-popup" style="display: none;">
+  <div class="quote-box">
+    <button class="close-btn" onclick="closeForm()">✖️</button>
+    <h3>How should we reach you?</h3>
+    <form action="https://formsubmit.co/americanpoolpromain@gmail.com" method="POST" class="quote-form">
+      <input type="hidden" name="_captcha" value="false" />
+      <label for="first-name">First Name *</label>
+      <input type="text" id="first-name" name="first-name" required />
 
+      <label for="last-name">Last Name *</label>
+      <input type="text" id="last-name" name="last-name" required />
 
-    <section id="services" class="services-section">
-      <h2>Services and Products</h2>
-      <p>We provide expert pool care, inspections, and treatments tailored to Central Florida homeowners. Here are some of our most popular services:</p>
-    
-      <div class="service-grid">
-        <div class="service-card">
-          <img src="images/icon-cleaning.png" alt="Weekly Pool Cleaning Icon">
-          <h3>Weekly Pool Cleaning</h3>
-          <p>Consistent cleaning, brushing, skimming, and vacuuming to keep your pool crystal clear.</p>
-        </div>
-    
-        <div class="service-card">
-          <img src="images/icon-chemicals.png" alt="Chemical Balancing Icon">
-          <h3>Chemical Testing & Balancing</h3>
-          <p>Precise testing and balancing for pH, chlorine, alkalinity, calcium, and more.</p>
-        </div>
-    
-        <div class="service-card">
-          <img src="images/icon-filter.png" alt="Filter Maintenance Icon">
-          <h3>Filter Maintenance</h3>
-          <p>Backwashing, cartridge replacement, and DE cleanings to optimize water flow.</p>
-        </div>
-    
-        <div class="service-card">
-          <img src="images/icon-green.png" alt="Green Pool Icon">
-          <h3>Green-to-Clean</h3>
-          <p>Turn green water clear again with algae removal, shock, and floc treatments.</p>
-        </div>
-    
-        <div class="service-card">
-          <img src="images/icon-inspection.png" alt="Pump Inspection Icon">
-          <h3>Equipment Inspections</h3>
-          <p>Full inspection of pumps, heaters, salt systems, and leaks during every visit.</p>
-        </div>
-    
-        <div class="service-card">
-          <img src="images/icon-consult.png" alt="Consultation Icon">
-          <h3>Consultations</h3>
-          <p>Need a second opinion? We'll advise on pool repairs, upgrades, and water quality.</p>
-        </div>
-      </div>
-    </section>
+      <label for="phone">Phone *</label>
+      <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required />
 
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
 
-    <section id="about">
-      <h2>About American Pool Pro</h2>
-      <p><strong>For Homeowners:</strong><br>
-      American Pool Pro delivers dependable, professional pool care with a personal touch. We’re locally operated, CPO-certified, and committed to keeping your pool clear, safe, and beautiful — all year long.</p>
-    
-      <p><strong>For Entrepreneurs:</strong><br>
-      We're more than just a pool company — we're building a franchise brand that empowers owner-operators to thrive. Whether you're looking to leave your 9–5 or scale your independence, American Pool Pro offers training, tools, and support to get you there.</p>
-    </section>
+      <label>
+        <input type="checkbox" name="sms-optin" required />
+        By checking this box, you agree to receive text messages related to your request and updates.
+      </label>
 
-    <section id="franchise" class="franchise-section">
-      <div class="franchise-content">
-        <div class="franchise-image">
-          <img src="images/about.jpg" alt="Franchise with American Pool Pro">
-        </div>
-        <div class="franchise-text">
-          <h2>Become a Franchisee</h2>
-          <p>American Pool Pro is growing across the U.S., and we’re looking for driven owner-operators who want to build a business backed by proven systems, strong support, and a trustworthy brand.</p>
-          <p>Our low-overhead model is designed for independence and profitability — perfect for those ready to make pool care a full-time opportunity.</p>
-          <a href="#" class="btn-primary" onclick="openFranchisePopup()">Request Franchise Info</a>
-        </div>
-      </div>
-    </section>
+      <button type="submit">Continue</button>
+    </form>
+  </div>
+</section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>📍 Based in Central Florida</p>
-        <p>📞 Call or Text: <strong>904-648-9435</strong></p>
-        <p>📧 Email: <strong>americanpoolpromain@gmail.com</strong></p>
-    </section>
+<!-- Franchise Popup Form -->
+<div class="franchise-popup" id="franchise-popup">
+  <div class="franchise-box">
+    <button class="close-btn" onclick="closeFranchisePopup()">×</button>
+    <h2>Franchise Inquiry</h2>
+    <form class="franchise-form" name="franchise-request" method="POST" netlify>
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" name="name" required />
 
-    <section class="bottom-links">
-      <h3>Explore More</h3>
-      <div class="link-grid">
-        <a href="#quote-form">Schedule Service</a>
-        <a href="#about">Our Story</a>
-        <a href="#services">What We Do</a>
-        <a href="#franchise">Become a Franchisee</a>
-        <a href="#contact">Contact Us</a>
-      </div>
-    </section>
+      <label for="phone">Phone Number *</label>
+      <input type="tel" id="phone" name="phone" required />
 
-    <footer>
-        <p>&copy; 2025 American Pool Pro. All rights reserved.</p>
-    </footer>
-    
-    <script src="js/scripts.js"></script>
+      <label for="email">Email Address *</label>
+      <input type="email" id="email" name="email" required />
 
-    <section id="quote-form" class="quote-popup" style="display: none;">
-      <div class="quote-box">
-        <button class="close-btn" onclick="closeForm()">✖️</button>
-        <h3>How should we reach you?</h3>
-        <form action="https://formsubmit.co/americanpoolpromain@gmail.com" method="POST" class="quote-form">
-          <input type="hidden" name="_captcha" value="false">
-    
-          <label for="first-name">First Name *</label>
-          <input type="text" id="first-name" name="first-name" required>
-    
-          <label for="last-name">Last Name *</label>
-          <input type="text" id="last-name" name="last-name" required>
-    
-          <label for="phone">Phone *</label>
-          <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
-    
-          <label for="email">Email *</label>
-          <input type="email" id="email" name="email" placeholder="you@example.com" required>
-    
-          <label>
-            <input type="checkbox" name="sms-optin" required>
-            By checking this box, you agree to receive text messages related to your request and updates.
-          </label>
-    
-          <button type="submit">Continue</button>
-        </form>
-      </div>
-    </section>
+      <label for="location">Location *</label>
+      <select id="location" name="location" required>
+        <option value="">Select your state</option>
+        <option>Alabama</option><option>Arizona</option><option>Arkansas</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>Florida</option><option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Mississippi</option><option>Missouri</option><option>Nevada</option><option>New Mexico</option><option>North Carolina</option><option>Oklahoma</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>West Virginia</option>
+      </select>
 
-    <div class="franchise-popup" id="franchise-popup">
-      <div class="franchise-box">
-        <button class="close-btn" onclick="closeFranchisePopup()">×</button>
-        <h2>Franchise Inquiry</h2>
-        <form class="franchise-form" name="franchise-request" method="POST" netlify>
-          <label for="name">Full Name *</label>
-          <input type="text" id="name" name="name" required>
-    
-          <label for="phone">Phone Number *</label>
-          <input type="tel" id="phone" name="phone" required>
-    
-          <label for="email">Email Address *</label>
-          <input type="email" id="email" name="email" required>
-    
-          <label for="location">Location *</label>
-          <select id="location" name="location" required>
-            <option value="">Select your state</option>
-            <option>Alabama</option><option>Arizona</option><option>Arkansas</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>Florida</option><option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Mississippi</option><option>Missouri</option><option>Nevada</option><option>New Mexico</option><option>North Carolina</option><option>Oklahoma</option>><option>Tennessee</option><option>Texas</option><option>Utah</option><option>West Virginia</option>
-          </select>
-    
-          <label for="experience">Tell us about your background or why you're interested *</label>
-          <textarea id="experience" name="experience" rows="4" required></textarea>
-    
-          <button type="submit">Submit Request</button>
-        </form>
-      </div>
-    </div>
-    
+      <label for="experience">Tell us about your background or why you're interested *</label>
+      <textarea id="experience" name="experience" rows="4" required></textarea>
+
+      <button type="submit">Submit Request</button>
+    </form>
+  </div>
+</div>
+
+<script src="js/scripts.js"></script>
 </body>
 </html>
