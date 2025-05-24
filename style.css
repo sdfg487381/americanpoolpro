@@ -471,4 +471,48 @@ a.quote-button:hover {
   }
 }
 
+.franchise-form {
+  margin-top: 2em;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.franchise-form label {
+  font-weight: bold;
+  color: #113765;
+}
+
+.franchise-form input,
+.franchise-form select,
+.franchise-form textarea {
+  padding: 0.75em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.franchise-form button {
+  background-color: #b31942;
+  color: white;
+  padding: 0.75em;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.franchise-form button:hover {
+  background-color: #8e122f;
+}
+
+@media screen and (max-width: 768px) {
+  .franchise-form {
+    width: 100%;
+  }
+}
 
