@@ -11,3 +11,11 @@ function toggleMenu() {
   function closeForm() {
     document.getElementById('quote-form').style.display = 'none';
   }
+
+  function openFranchisePopup() {
+    document.getElementById("franchise-popup").style.display = "flex";
+  }
+  
+  function closeFranchisePopup() {
+    document.getElementById("franchise-popup").style.display = "none";
+  }
