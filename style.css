@@ -56,35 +56,31 @@ body {
 }
 
 /* === Sections === */
-section {
-    padding: 2em;
-    background: white;
-    margin: 1em auto;
-    max-width: 800px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    overflow: hidden;
-    clear: both;
+.services-section {
+  padding: 3em 1em;
+  background-color: #ffffff;
+  text-align: center;
 }
 
-section img {
-    width: 35%;
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 10px;
-    border-radius: 8px;
+.services-section h2 {
+  font-size: 1.8em;
+  color: #113765;
+  margin-bottom: 0.5em;
 }
 
-section h2, section p, section ul {
-    display: block;
-    margin-left: 42%;
+.services-section p {
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 2em;
+  font-size: 1em;
 }
 
-section::after {
-    content: "";
-    display: table;
-    clear: both;
+.service-card img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1em;
 }
+
 
 /* === Footer === */
 footer {
