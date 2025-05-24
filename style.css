@@ -76,9 +76,12 @@ body {
 }
 
 .service-card img {
-  width: 48px;
-  height: 48px;
+  max-width: 64px;
+  height: auto;
   margin-bottom: 1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
