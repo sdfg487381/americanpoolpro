@@ -25,23 +25,31 @@
                                           
     .bar-actions {
     flex-direction: column;
-    gap: 0.5em;
-    align-items: flex-end;
+    gap: 0.75em;
+    align-items: center;
     display: flex;
     }
     
     .btn-bar,
     .btn-primary {
-    width: auto;
+    width: 100%;
+    max-width: 240px;
     padding: 10px 16px;
     font-size: 1em;
+    text-align: center;
     }
     
     .top-bar {
     flex-direction: column;
-    align-items: flex-start;
-    gap: 0.75em;
-        }
+    padding: 1em;
+    align-items: center;
+    gap: 1em;
+    }
+
+    .bar-logo {
+    height: 50px;
+    margin-bottom: 0.5em;
+    }
 
     .menu-toggle {
     display: block;
@@ -61,21 +69,23 @@
     background-color: #113765;
     text-align: center;
     padding-bottom: 1em;
+    padding: 1em 0;
+    gap: 0.5em;
+    }
+        
+    .site-nav a {
+    padding: 0.5em 0;
+    font-size: 1.1em;
     }
     
     .site-nav.show {
     display: flex;
-        }
+    }
 
     .header-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    }
-    
-    .site-nav {
-    flex-direction: column;
-    gap: 0.5em;
     }
     
     .service-grid {
@@ -124,7 +134,7 @@
     .quote-form input,
     .quote-form textarea {
     font-size: 1em;
-        }
+    }
 
     .franchise-content {
     flex-direction: column;
@@ -133,11 +143,12 @@
     
     .franchise-text {
     text-align: center;
-        }
+    }
 
     .franchise-form {
     width: 100%;
-        }
+    }
+        
     }
     
     .container,
