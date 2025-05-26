@@ -15,6 +15,16 @@
     box-sizing: border-box;
     }
 
+    .menu-toggle {
+    background: none;
+    border: none;
+    font-size: 1.8em;
+    color: #113765;
+    cursor: pointer;
+    padding: 0.5em;
+    display: none; /* default is hidden */
+    }
+
     /* === Responsive === */
     @media screen and (max-width: 768px) {
     body,
@@ -56,10 +66,6 @@
     position: absolute;
     top: 1.2em;
     right: 1em;
-    background: none;
-    border: none;
-    font-size: 1.8em;
-    color: #113765;
     }
     
     .site-nav {
