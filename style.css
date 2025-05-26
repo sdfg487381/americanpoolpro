@@ -16,32 +16,25 @@
     }
 
     .menu-toggle {
-    display: none; /* default is hidden */
-    background: none;
-    border: none;
-    padding: 0.5em;
-    cursor: pointer;
-    z-index: 1100;
-    font-size: 1.8em;
-    color: #113765;
+    display: none;
     position: absolute;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
-    margin-left: auto;
-    margin-right: 1em;
     top: 1.2em;
     right: 1em;
+    background: none;
+    border: none;
+    font-size: 1.8em;
+    color: #113765;
+    cursor: pointer;
+    z-index: 1001;
     }
 
     .menu-toggle .bar {
     display: block;
-    width: 25px;
+    width: 24px;
     height: 3px;
+    margin: 5px 0;
     background-color: #113765;
     border-radius: 2px;
-    transition: all 0.3s ease;
     }
 
     /* Hamburger bars */
