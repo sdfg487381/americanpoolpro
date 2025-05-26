@@ -86,6 +86,9 @@
 
     .menu-toggle {
     display: block;
+    position: absolute;
+    top: 1.2em;
+    right: 1em;
     }
     
     .site-nav {
