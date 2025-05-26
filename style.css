@@ -26,6 +26,7 @@
     color: #113765;
     cursor: pointer;
     z-index: 1001;
+    background: yellow; /* <== Debug line */
     }
 
     .menu-toggle .bar {
